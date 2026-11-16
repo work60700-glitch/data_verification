@@ -56,6 +56,8 @@ function isValidRecaptchaHostname(hostname) {
         'cutiepiepets.ae',
         'seopravoce.com.br',
         'kupculer.com.tr',
+        'lagoonpubmacae.com.br',
+        'sisclinweb.com.br',
         'lagoonpubmacae.com.br'
     ];
 
